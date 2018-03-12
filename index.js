@@ -10,8 +10,8 @@ var transporter = nodemailer.createTransport(smtpTransport({
 }));
 
 var mailOptions = {
-  from: 'example@gmail.com',
-  to: 'example@gmail.com, example@gmail.com',
+  from: 'suvichan_pra@sendit.asia',
+  to: 'suvichan_pra@sendit.asia',
   subject: '[TEST] Sending Email using Node.js',
   text: 'That was easy!'
 };
@@ -22,5 +22,4 @@ transporter.sendMail(mailOptions, function(error, info){
   } else {
     console.log('Email sent: ' + info.response);
   }
-
 });
